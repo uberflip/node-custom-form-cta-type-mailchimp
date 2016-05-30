@@ -1,0 +1,34 @@
+{
+  "name": "node-custom-form-cta-type-mailchimp",
+  "version": "1.0.0",
+  "description": "A sample custom form CTA type for Uberflip that integrates Uberflip CTAs with the MailChimp email marketing platform.",
+  "author": "Uberflip",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://git.flyptech.com/platform-samples/node-custom-form-cta-type-mailchimp.git"
+  },
+  "private": true,
+  "analyze": true,
+  "main": "index.js",
+  "scripts": {
+    "watch-start": "nodemon -x npm start",
+    "start": "node index.js",
+    "watch-test": "nodemon -x npm test",
+    "test": "standard && echint && mdspell -r -n --en-us '**/*.md' '!**/node_modules/**/*.md'"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mailchimp-api": "^2.0.7"
+  },
+  "config": {
+    "listId": "YOUR LIST ID HERE"
+  },
+  "devDependencies": {
+    "echint": "^1.5.3",
+    "markdown-spellcheck": "^0.10.0",
+    "nodemon": "^1.9.1",
+    "standard": "^6.0.8"
+  }
+}
